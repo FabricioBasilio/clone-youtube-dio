@@ -1,2 +1,93 @@
 @import url("./reset.css");
 
+:root {
+  --cor1: #cccccc;
+  --cor2: #ffffff;
+  --cor3: #f8f8f8;
+}
+
+body {
+  background-color: var(--cor3);
+}
+
+/* Header */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--cor2);
+  align-items: center;
+  padding: 10px 30px;
+}
+
+header > section {
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+}
+
+/* Menu do header */
+
+header > section.menu {
+  width: 150px;
+  justify-content: space-between;
+}
+
+header > section.menu > img#logo-youtube {
+  width: 100px;
+}
+
+/* Barra de pesquisa do header */
+
+header > section.pesquisa {
+  width: 300px;
+  justify-content: center;
+  height: 40px;
+}
+
+input#pesquisa-input,
+button#pesquisa-botao {
+  border-radius: 0;
+}
+
+input#pesquisa-input {
+  width: 300px;
+  font-size: 18px;
+  border: var(--cor1) solid 1px;
+  outline: none;
+  padding: 0 10px;
+}
+
+button#pesquisa-botao {
+  width: 50px;
+  border: var(--cor1) solid 1px;
+  border-left: none;
+  background-color: var(--cor3);
+  cursor: pointer;
+}
+
+button#pesquisa-botao img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Perfil do header */
+
+header > section.perfil {
+  width: 170px;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > section.perfil img {
+  display: block;
+  width: 25px;
+}
+
+header img#foto-perfil {
+  width: 40px;
+  height: 42px;
+  border-radius: 50%;
+}
