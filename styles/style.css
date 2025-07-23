@@ -5,6 +5,7 @@
   --cor2: #ffffff;
   --cor3: #f8f8f8;
   --cor4: #cc0000;
+  --cor5: #515151;
 }
 
 body {
@@ -93,4 +94,84 @@ header img#foto-perfil {
 }
 
 /* Main */
+/* Main - seção vídeo atual */
+main {
+  margin-top: 30px;
+}
 
+.video-atual {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 20px;
+}
+
+.video-atual > h3.titulo-video {
+  font-size: 20px;
+}
+
+/* Main - seção vídeo atual - botões vídeo*/
+
+.botoes-video {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botoes-video > .canal {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.canal > span {
+  display: block;
+  font-size: 14px;
+}
+
+.canal > span.titulo-canal {
+  font-weight: 600;
+}
+
+.canal > span.quantidade-inscritos-canal {
+  color: var(--cor5);
+}
+
+.area-like,
+.area-dislike,
+.area-compartilhar,
+.area-download {
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Main - seção vídeo atual - botões vídeo - botão inscreva-se*/
+
+button.botao-inscrever-se {
+  width: 159px;
+  height: 40px;
+  background-color: var(--cor4);
+  border: none;
+  color: var(--cor2);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* Main - seção vídeo atual - textos*/
+
+p.video-informacoes {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+p.video-descricao {
+  font-size: 14px;
+  color: var(--cor5);
+}
