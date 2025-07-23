@@ -4,6 +4,7 @@
   --cor1: #cccccc;
   --cor2: #ffffff;
   --cor3: #f8f8f8;
+  --cor4: #cc0000;
 }
 
 body {
@@ -24,7 +25,6 @@ header {
 header > section {
   display: flex;
   flex-direction: row;
-  background-color: blue;
 }
 
 /* Menu do header */
@@ -91,3 +91,6 @@ header img#foto-perfil {
   height: 42px;
   border-radius: 50%;
 }
+
+/* Main */
+
