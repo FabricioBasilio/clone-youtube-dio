@@ -28,6 +28,10 @@ header > section {
   flex-direction: row;
 }
 
+header > section > img {
+  cursor: pointer;
+}
+
 /* Menu do header */
 
 header > section.menu {
@@ -94,15 +98,21 @@ header img#foto-perfil {
 }
 
 /* Main */
-/* Main - seção vídeo atual */
+
 main {
-  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 30px auto 0 auto;
+  width: 1300px;
 }
+
+/* Main - seção vídeo atual */
 
 .video-atual {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 70%;
   gap: 20px;
 }
 
@@ -148,6 +158,7 @@ main {
   gap: 10px;
   align-items: center;
   cursor: pointer;
+  font-weight: 600;
 }
 
 /* Main - seção vídeo atual - botões vídeo - botão inscreva-se*/
@@ -174,4 +185,39 @@ p.video-informacoes {
 p.video-descricao {
   font-size: 14px;
   color: var(--cor5);
+  width: 510px;
+}
+
+/* Main - seção outros vídeos */
+
+section.outros-videos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+}
+
+section.outros-videos > .video-sugestao {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.video-sugestao > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.video-sugestao > div > h5 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.video-sugestao > div > span {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--cor5);
+  width: 196px;
 }
